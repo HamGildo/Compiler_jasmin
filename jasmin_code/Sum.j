@@ -18,7 +18,7 @@ Label1:
 	iload_1
 	ldc 1
 	iadd
-	if_icmpge	 Label2
+	if_icmpge Label2
 	iload_2
 	iload_3
 	iadd
@@ -26,3 +26,6 @@ Label1:
 	iinc 3 1
 	goto Label1
 Label2:
+    iload_2
+    ireturn
+    .end method
