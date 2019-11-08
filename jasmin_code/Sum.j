@@ -13,3 +13,16 @@ ldc 0
 istore_2
 ldc 1
 istore_3
+Label1:
+	iload_3
+	iload_1
+	ldc 1
+	iadd
+	if_icmpge	 Label2
+	iload_2
+	iload_3
+	iadd
+	istore_2
+	iinc 3 1
+	goto Label1
+Label2:
