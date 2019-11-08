@@ -29,3 +29,12 @@ Label2:
     iload_2
     ireturn
     .end method
+.method public static main([Ljava/lang/String;)V
+.limit stack 32
+.limit locals 32
+getstatic java/lang/System/out Ljava/io/PrintStream;
+ldc 100
+invokestatic Sum/sum(I)I
+invokevirtual java/io/PrintStream/println(I)V
+return
+.end method
