@@ -15,7 +15,7 @@ ldc 1
 istore_3
 Label1:
 	iload_3
-	iload_1
+	iload_0
 	ldc 1
 	iadd
 	if_icmpge Label2
